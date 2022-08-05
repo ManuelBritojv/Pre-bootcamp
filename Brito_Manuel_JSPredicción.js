@@ -1,5 +1,5 @@
 function myBirthYearFunc(){
-        console.log("Nací en " + 1980); //Lo que indicara el console.log es el año de nacimiento agregano un "Nací en" antes.
+        console.log("Nací en " + 1980); //Lo que indicara el console.log es el año de nacimiento agregando un "Nací en" antes.
     }
     function myBirthYearFunc(EntradaAñoNacimiento){
             console.log("Nací en " + EntradaAñoNacimiento); // Si EntadaAñoNacimiento == 1980, el console.log sería "Nací en 1980" 
