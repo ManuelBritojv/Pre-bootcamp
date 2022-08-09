@@ -7,23 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+	<var></var>
     <div id='background'>
         <div id='character' style='position:absolute; top:250px; left:250px; background-image: url("Ninja man/ninja.gif"); width:32px; height:32px;'></div>
+		<div id='onigiri1' style='position:absolute; top:500px; left:500px; background-image:url("Ninja man/onigiri.png"); width:32px; height:32px;'></div>
+		<div id='onigiri2' style='position:absolute; top:500px; left:0px; background-image:url("Ninja man/onigiri.png"); width:32px; height:32px;'></div>
+		<div id='onigiri3' style='position:absolute; top:0px; left:500px; background-image:url("Ninja man/onigiri.png"); width:32px; height:32px;'></div>
+		<div id='onigiri4' style='position:absolute; top:0px; left:0px; background-image:url("Ninja man/onigiri.png"); width:32px; height:32px;'></div>
+		<h1 style="position:absolute;top:0px; left:600px;"> Contador = </h1>
     </div>
     <script type="text/javascript">
-	    var leftValue = 250, topValue = 250; rotate = 0
-
+	    var leftValue = 250, topValue = 250, count = 0, rotate= 0;
     	function update(){
     		document.getElementById("character").style.left = leftValue+"px";
     		document.getElementById("character").style.top = topValue+"px";
-            document.getElementById("character").style.transform.rotate = rotate+"deg"
     	}
-
     	document.onkeydown = function(e){
     		console.log(e);
     		if(e.keyCode == 37 && leftValue > 0) { // LEFT
     			leftValue = leftValue - 10;
-                rotate = 180
     		}
     		else if (e.keyCode == 39&& leftValue < 500) { // RIGHT
     			leftValue = leftValue + 10;    		
