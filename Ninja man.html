@@ -10,11 +10,7 @@
 <body>
     <div id='background'>
         <div id='character' style='position:absolute; top:250px; left:250px; background-image: url("Ninja man/ninja.gif"); width:32px; height:32px;'></div>
-		<div id='sushi1' style='position:absolute; top:500px; left:500px; background-image:url("Ninja man/sushi.png"); width:32px; height:32px;'></div>
-		<div id='sushi2' style='position:absolute; top:500px; left:0px; background-image:url("Ninja man/sushi.png"); width:32px; height:32px;'></div>
-		<div id='sushi3' style='position:absolute; top:0px; left:500px; background-image:url("Ninja man/sushi.png"); width:32px; height:32px;'></div>
-		<div id='sushi4' style='position:absolute; top:0px; left:0px; background-image:url("Ninja man/sushi.png"); width:32px; height:32px;'></div>
-		<h1 style="position:absolute;top:0px; left:600px;"> Contador = </h1>
+		<h1 style="position:absolute;top:0px; left:600px;"> Contador =</h1>
     </div>
     <script type="text/javascript">
 	    var leftValue = 250, topValue = 250, count = 0, rotate= 0;
@@ -30,9 +26,9 @@
 				document.getElementById("character").classList.remove(["right"])
 				document.getElementById("character").classList.remove(["up"])
 				document.getElementById("character").classList.add("left") 
-    		}
+				}	
     		else if (e.keyCode == 39&& leftValue < 500) { // RIGHT
-    			leftValue+=10;
+				leftValue+=10;
 				document.getElementById("character").classList.remove(["down"])
 				document.getElementById("character").classList.remove(["left"])
 				document.getElementById("character").classList.remove(["up"])
