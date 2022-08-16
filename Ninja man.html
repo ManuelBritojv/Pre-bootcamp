@@ -11,9 +11,18 @@
     <div id='background'>
         <div id='character' style='position:absolute; top:250px; left:250px; background-image: url("Ninja man/ninja.gif"); width:32px; height:32px;'></div>
 		<h1 style="position:absolute;top:0px; left:600px;"> Contador =</h1>
+		<center><h1 id="counter-label"></h1></center>
     </div>
+	<center>
+		<div>
+
+		</div>
+	</center>
     <script type="text/javascript">
-	    var leftValue = 250, topValue = 250, count = 0, rotate= 0;
+	    var leftValue = 250, topValue = 250, count = 0;
+		function count(){
+			
+		}
     	function update(){
     		document.getElementById("character").style.left = leftValue+"px";
     		document.getElementById("character").style.top = topValue+"px";
