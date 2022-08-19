@@ -1,10 +1,12 @@
 var leftValue = 900, topValue = 350;
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
+arr = [32,32]
 function update(){
     document.getElementById("character").style.left = leftValue+"px";
     document.getElementById("character").style.top = topValue+"px";
+}
+function enemy(){
+    document.getElementById("onigiri").style.left = arr[0]+"px";
+    document.getElementById("onigiri").style.top = arr[1]+"px";
 }
 document.onkeydown = function(e){
     console.log(e);
