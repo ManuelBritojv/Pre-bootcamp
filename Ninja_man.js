@@ -1,12 +1,15 @@
 var leftValue = 900, topValue = 350;
 arr = [32,32]
+var check = 0
 function update(){
     document.getElementById("character").style.left = leftValue+"px";
     document.getElementById("character").style.top = topValue+"px";
 }
 function enemy(){
-    document.getElementById("onigiri").style.left = arr[0]+"px";
-    document.getElementById("onigiri").style.top = arr[1]+"px";
+    if (check == 0){
+    document.getElementById("onigiri").style.width = arr[0]+"px";
+    document.getElementById("onigiri").style.height = arr[1]+"px";
+    }
 }
 document.onkeydown = function(e){
     console.log(e);
@@ -39,4 +42,5 @@ document.onkeydown = function(e){
         document.getElementById("character").classList.add("up")
     }	
     update();
+    enemy();
 }
