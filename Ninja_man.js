@@ -17,7 +17,7 @@ document.onkeydown = function(e){
         document.getElementById("character").classList.remove(["up"])
         document.getElementById("character").classList.add("left") 
         }	
-    else if (e.keyCode == 39&& leftValue < 1150) { // RIGHT
+    else if (e.keyCode == 39 && leftValue < 1150) { // RIGHT
         leftValue+=10;
         document.getElementById("character").classList.remove(["down"])
         document.getElementById("character").classList.remove(["left"])
