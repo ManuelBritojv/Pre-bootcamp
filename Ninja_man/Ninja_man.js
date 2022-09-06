@@ -2,7 +2,6 @@ var leftValue = 900, topValue = 350;
 arr = [32,32]
 var check = 0
 var count = 0
-document.write(count)
 function update(){
     document.getElementById("character").style.left = leftValue+"px";
     document.getElementById("character").style.top = topValue+"px";
