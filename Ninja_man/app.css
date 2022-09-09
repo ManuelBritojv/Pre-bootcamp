@@ -1,3 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 10px solid cyan;
+}
+#Ninja_man{
+    padding: 10px;
+    margin: 10px;
+}
 .down{
     transform: rotate(90deg)
 }    
@@ -9,4 +18,19 @@
 }
 .left{
     transform: rotate(180deg);
+}
+.fila{
+    line-height:0 ;
+}
+.wall{
+    background-color: cyan;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+.blank{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
 }
