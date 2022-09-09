@@ -15,12 +15,12 @@
 		<div id='onigiri' style='position:absolute; top:600px; left:650px; background-image: url("Ninja_Man img/onigiri.png");'></div>
         <script>
             var random = Math.floor(Math.random() * 2)
-            document.write(random)
             if(random == 0){
                 document.getElementById("background").style.backgroundColor = "black";
             }
             else{
                 document.getElementById("background").style.backgroundColor = "darkslategray";
+                document.getElementById("onigiri").style.backgroundImage = url("Ninja_Man img/sushi.png")
             }
         </script>
     </body>
