@@ -23,13 +23,13 @@
     line-height:0 ;
 }
 .wall{
-    background-color: cyan;
+    background-color: red;
     height: 40px;
     width: 40px;
     display: inline-block;
 }
 .blank{
-    background-color: black;
+    background-color: blue;
     height: 40px;
     width: 40px;
     display: inline-block;
