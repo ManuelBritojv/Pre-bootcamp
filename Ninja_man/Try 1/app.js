@@ -1,32 +1,32 @@
-var leftValue = 900, topValue = 350;
+var leftValue = 0, topValue = 0;
 function update(){
     document.getElementById("character").style.left = leftValue+"px";
     document.getElementById("character").style.top = topValue+"px";
 }
 document.onkeydown = function(e){
     console.log(e);
-    if(e.keyCode == 37 && leftValue > 650) { // LEFT
+    if(e.keyCode == 37){
         leftValue-=10
         document.getElementById("character").classList.remove(["down"])
         document.getElementById("character").classList.remove(["right"])
         document.getElementById("character").classList.remove(["up"])
         document.getElementById("character").classList.add("left") 
-        }	
-    else if (e.keyCode == 39 && leftValue < 1150) { // RIGHT
+    }	
+    else if (e.keyCode == 39) { // RIGHT
         leftValue+=10;
         document.getElementById("character").classList.remove(["down"])
         document.getElementById("character").classList.remove(["left"])
         document.getElementById("character").classList.remove(["up"])
         document.getElementById("character").classList.add("right")    		
     }
-    else if (e.keyCode == 40 && topValue < 600) { // DOWN
+    else if (e.keyCode == 40) { // DOWN
         topValue+=10;
         document.getElementById("character").classList.remove(["left"])
         document.getElementById("character").classList.remove(["right"])
         document.getElementById("character").classList.remove(["up"])
         document.getElementById("character").classList.add("down")
     }
-    else if (e.keyCode == 38 && topValue > 100) { //UP
+    else if (e.keyCode == 38) { //UP
         topValue-=10
         document.getElementById("character").classList.remove(["left"])
         document.getElementById("character").classList.remove(["right"])
@@ -35,30 +35,3 @@ document.onkeydown = function(e){
     }	
     update();
 }
-var mapa = [
-    [0,0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0,0],
-    ];
-var mapadict = {
-    0: 'blank',
-    1: 'wall',
-    2: 'onigiri'
-}
-function dibujarmapa(){
-    output = "";
-    for(var fila = 0;fila<mapa.length;fila++){
-        output += "<div class = 'fila'>"
-        for(var x = 0; x<mapa[fila].length;x++){
-            output += "<div class = ''" + mapadict[mapa[fila][x]] + "'></div>"
-        }
-        output += "</div>"
-    }
-    document.getElementById('mapa').innerHTML = output;
-}
-dibujarmapa()

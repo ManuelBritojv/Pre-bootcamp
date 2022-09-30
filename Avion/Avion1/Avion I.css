@@ -1,0 +1,17 @@
+#map{
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+}
+#player{
+    width: 70px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    top: 700px;
+    background-image:url(/Avion/Avion1/img/player.png)
+}
+body{
+    background-color: black;
+}
