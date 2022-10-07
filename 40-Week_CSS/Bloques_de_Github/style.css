@@ -1,0 +1,40 @@
+img{
+    width: 150px;
+    height: 150px;
+}
+h1{
+    text-align: center;
+}
+.bloque1{
+    width: 600px;
+    height: 200px;
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bloque2{
+    width: 600px;
+    height: 200px;
+    background-color: rosybrown;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bloque3{
+    width: 600px;
+    height: 200px;
+    background-color: gray;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
