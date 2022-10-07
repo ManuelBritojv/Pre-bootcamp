@@ -1,0 +1,13 @@
+*{
+    font-family: cursive;
+}
+h1, li, a, button{
+    display: inline;
+    color: white;
+}
+#bloque{
+    width: 600px;
+    height: 100px;
+    background-color: grey;
+}
+
