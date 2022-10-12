@@ -1,0 +1,48 @@
+*{
+    font-family: cursive;
+}
+.bloque{
+    width: 700px;
+    border: 2px;
+    border-style: solid;
+    border-color: gray;
+}
+.color{
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    background-color:royalblue;
+}
+#profile{
+    position: relative;
+    width: 90px;
+    top: 50px;
+    left: 20px;
+}
+#map, #settings{
+    width: 20px;
+    margin: 20px;
+    margin-top:10px;
+    margin-bottom: 0px;
+}
+p, h1{
+    margin:20px;
+}
+h3{
+    display: inline;
+    position:absolute;
+    top: 190px;
+}
+h1{
+    margin-top: 50px;
+    margin-bottom:1px;
+}
+a{
+    display: inline;
+    position: absolute;
+    top: 358px;
+}
+
+
+
+
