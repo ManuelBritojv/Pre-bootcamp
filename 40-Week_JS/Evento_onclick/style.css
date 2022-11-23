@@ -3,6 +3,7 @@
     margin: 0%;
     padding: 0%;
 }
+/*Navigation*/
 .first_box{
     background-color: rgb(153, 153, 153);
     margin-left: 8%;
@@ -26,10 +27,24 @@
     background-color: royalblue;
     font-size: 18px;
     color: white;
-    width: 180px;
+    width: 100px;
     height: 40px;
     box-shadow: 4px 3px black;
     margin-left: 10%;
     position: relative;
     top: -10px;
+}
+/*Special*/
+
+/*Second Box*/
+.second-box{
+    border: solid black;
+}
+/*Third Box*/
+.third-box{
+    border:solid black;
+}
+/*Fourth Box*/
+.fourth-box{
+    border: solid black;
 }
