@@ -6,37 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dojonary</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
 
   <body>
     <div class="first_box">
       <h1 class="title">Dojonary</h1>
       <input type="search" class="search" />
-      <button class="login">Login</button>
+      <button class="login" onclick="text(this)">Login</button>
     </div>
     <div class="special">
       <div class="second-box">
         <h1>ninja</h1>
-        <p>noun</p>
-        <p>Plural: ninjas</p>
-        <button>13 likes</button>
-        <p>A practiced skilled in the <a href="#">Japanese</a>
-          art of <a href="#">ninjutsu</a>
-        </p>
+        <p style="font-style:italic;">noun</p>
+        <div class="description-1">
+          <p class="links">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+        </div>
+        <p>plural: ninjas</p>
+        <button onclick="alert('ninja was liked')">13 likes</button>
       </div>
-      <div class="third-box">
+      <div class="dojonary">
+        <div class="text">
+        <p>Dojonary is<br>defined by <strong>YOU</strong></p>
+        </div>
+        <button onclick="hide(this)">Add definition</button>
+      </div>
+    </div>
+    <div class="special">
+      <div class="second-box">
         <h1>ninja</h1>
-        <p>noun</p>
-        <p>Plural: ninjas</p>
-        <button>13 likes</button>
-        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus
-        </p>
-      </div>
-      <div class="fourth-box">
-        <h1>Dojonary is defined by YOU</h1>
-        <button>Add Definition</button>
+        <p style="font-style:italic;">noun</p>
+        <div class="description-1">
+          <p class="links">A <a href="#">Programmer</a> who breaks down problems with<a href="#">zen</a>-like foccus</p>
+        </div>
+        <p>plural: ninjas</p>
+        <button onclick="alert('ninja was liked')">37 likes</button>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
